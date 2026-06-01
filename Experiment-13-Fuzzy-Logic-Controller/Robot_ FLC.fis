@@ -1,0 +1,47 @@
+[System]
+Name='Robot_ FLC'
+Type='mamdani'
+Version=2.0
+NumInputs=2
+NumOutputs=2
+NumRules=1
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='Distance_(cm)'
+Range=[0 100]
+NumMFs=3
+MF1='Near':'trimf',[0 0 40]
+MF2='Medium':'trimf',[20 50 80]
+MF3='Far':'trimf',[60 100 100]
+
+[Input2]
+Name='Angles'
+Range=[-90 90]
+NumMFs=3
+MF1='Left':'trimf',[-90 -90 0]
+MF2='center':'trimf',[-30 0 30]
+MF3='right':'trimf',[0 90 90]
+
+[Output1]
+Name='speed'
+Range=[0 1]
+NumMFs=3
+MF1='slow':'trimf',[-0.4 0 0.4]
+MF2='Medium':'trimf',[0.3 0.5 0.7]
+MF3='Fast':'trimf',[0.6 1 1]
+
+[Output2]
+Name='Steering'
+Range=[-1 1]
+NumMFs=3
+MF1='Left':'trimf',[-1 -1 -0]
+MF2='Straight':'trimf',[-0.2 0 0.2]
+MF3='Right':'trimf',[0 1 1]
+
+[Rules]
+1 2, 1 3 (1) : 1
