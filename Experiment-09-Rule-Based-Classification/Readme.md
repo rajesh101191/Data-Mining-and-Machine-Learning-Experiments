@@ -1,4 +1,4 @@
-# Experiment 7: Rule-Based Classification using Weather Dataset
+# Experiment 9: Rule-Based Classification using Weather Dataset
 
 ## Aim
 
