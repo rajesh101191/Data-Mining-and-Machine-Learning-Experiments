@@ -1,4 +1,4 @@
-# Experiment 6: K-Nearest Neighbor (KNN) Using Social Network Ads Dataset
+# Experiment 5: K-Nearest Neighbor (KNN) Using Social Network Ads Dataset
 
 ## Aim
 
