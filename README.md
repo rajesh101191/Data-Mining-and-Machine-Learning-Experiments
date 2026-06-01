@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="images/Cover.png" alt="Data Mining and Machine Learning Experiments" width="100%">
+</p>
+
 # Data Mining and Machine Learning Laboratory
 
 A collection of practical Data Mining and Machine Learning experiments developed for undergraduate and postgraduate students.
